@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator" verbose="1" parallel="classes" thread-count="4">
+
+    <test name="main">
+          <classes>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorCosTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorCtgTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorDivDoubleExceptionTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorDivDoubleTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorDivLongExceptionTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorDivLongTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorIsNegativeTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorIsPositiveTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorPowTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorSinTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorSqrtTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CalculatorTgTest"/>
+        </classes>
+    </test>
+
+</suite>
