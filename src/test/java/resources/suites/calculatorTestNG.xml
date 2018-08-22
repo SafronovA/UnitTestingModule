@@ -33,7 +33,7 @@
 
     <test name="packageRun">
         <packages>
-            <package name="com.epam.tat.module4.testNgTests"/>
+            <package name="com.epam.tat.module4.junitTests"/>
         </packages>
     </test>
 
