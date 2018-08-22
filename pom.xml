@@ -31,8 +31,9 @@
     <dependency>
         <groupId>com.epam.tat.module4</groupId>
         <artifactId>calculator</artifactId>
-        <version>1.0</version><scope>system</scope>
-        <systemPath>C:/Users/Aliaksei_Safronau/IdeaProjects/module_4/src/main/resources/calculator-1.0.jar</systemPath>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/src/main/resources/calculator-1.0.jar</systemPath>
     </dependency>
 
 </dependencies>
@@ -46,6 +47,9 @@
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src\test\java\resources\suites\calculatorTestNG.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
