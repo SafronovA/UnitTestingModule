@@ -24,7 +24,7 @@ public class CalculatorMultDoubleTest  extends BaseCalculatorJunitTest {
     public static Object [][] dp(){
         return new Object[][]{
                 {1, 0, 0.0},
-                {5.0, 8.0, 40.0}
+                {1.1, 5.0, 5.5}
         };
     }
 

@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Calculator" verbose="1" parallel="classes" thread-count="4">
 
-    <test name="main">
-          <classes>
+<suite name="Calculator" verbose="1" parallel="classes" thread-count="4" >
+
+    <test name="main" enabled="false">
+        <classes>
             <class name="com.epam.tat.module4.testNgTests.CalculatorCosTest"/>
             <class name="com.epam.tat.module4.testNgTests.CalculatorCtgTest"/>
             <class name="com.epam.tat.module4.testNgTests.CalculatorDivDoubleExceptionTest"/>
@@ -16,6 +17,24 @@
             <class name="com.epam.tat.module4.testNgTests.CalculatorSqrtTest"/>
             <class name="com.epam.tat.module4.testNgTests.CalculatorTgTest"/>
         </classes>
+    </test>
+
+    <test name="junitTests" junit="true" enabled="false">
+        <classes>
+            <class name="com.epam.tat.module4.junitTests.BaseCalculatorJunitTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorMultDoubleTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorMultLongTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorSubDoubleTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorSubLongTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorSumDoubleTest"/>
+            <class name="com.epam.tat.module4.junitTests.CalculatorSumLongTest"/>
+        </classes>
+    </test>
+
+    <test name="packageRun">
+        <packages>
+            <package name="com.epam.tat.module4.testNgTests"/>
+        </packages>
     </test>
 
 </suite>
