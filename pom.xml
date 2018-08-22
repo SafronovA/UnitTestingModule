@@ -27,6 +27,14 @@
         <version>1.5.0</version>
         <scope>test</scope>
     </dependency>
+
+    <dependency>
+        <groupId>com.epam.tat.module4</groupId>
+        <artifactId>calculator</artifactId>
+        <version>1.0</version><scope>system</scope>
+        <systemPath>C:/Users/Aliaksei_Safronau/IdeaProjects/module_4/src/main/resources/calculator-1.0.jar</systemPath>
+    </dependency>
+
 </dependencies>
 
     <build>
@@ -46,5 +54,5 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
 </project>

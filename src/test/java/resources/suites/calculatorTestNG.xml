@@ -2,7 +2,7 @@
 
 <suite name="Calculator" verbose="1" parallel="classes" thread-count="4" >
 
-    <test name="main" enabled="false">
+    <test name="main" enabled="true">
         <classes>
             <class name="com.epam.tat.module4.testNgTests.CalculatorCosTest"/>
             <class name="com.epam.tat.module4.testNgTests.CalculatorCtgTest"/>
