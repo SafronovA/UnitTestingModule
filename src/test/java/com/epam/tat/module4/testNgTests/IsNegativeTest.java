@@ -5,27 +5,27 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorIsPositiveTest extends BaseCalculatorTestNgTest{
+public class IsNegativeTest extends BaseTestNgTest {
     private long arg1;
     private boolean expected;
 
-    @Factory(dataProvider = "posDp")
-    public CalculatorIsPositiveTest(long arg1, boolean expected) {
+    @Factory(dataProvider = "negativeDataProvider")
+    public IsNegativeTest(long arg1, boolean expected) {
         this.arg1 = arg1;
         this.expected = expected;
     }
 
     @Test
-    public void testPositive(){
-        boolean result = calculator.isPositive(arg1);
+    public void testNegative(){
+        boolean result = calculator.isNegative(arg1);
         Assert.assertEquals(result, expected);
     }
 
-    @DataProvider(name = "posDp")
-    public static Object [][] dp(){
+    @DataProvider(name = "negativeDataProvider")
+    public static Object [][] dataProvider(){
         return new Object[][]{
-                {2, true},
-                {-2, false},
+                {2, false},
+                {-2, true},
                 {0, false}
         };
     }

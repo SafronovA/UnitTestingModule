@@ -5,19 +5,19 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorDivLongTest extends BaseCalculatorTestNgTest{
+public class DivLongTest extends BaseTestNgTest {
     private long arg1;
     private long arg2;
     private long expected;
 
     @Factory(dataProvider = "divLDp")
-    public CalculatorDivLongTest(long arg1, long arg2, long expected) {
+    public DivLongTest(long arg1, long arg2, long expected) {
         this.arg1 = arg1;
         this.arg2 = arg2;
         this.expected = expected;
     }
 
-    @Test(groups = "div")
+    @Test(groups = "div", dataProviderClass = "divLDp")
     public void testDiv(){
         long result = calculator.div(arg1,arg2);
         Assert.assertEquals(result, expected);

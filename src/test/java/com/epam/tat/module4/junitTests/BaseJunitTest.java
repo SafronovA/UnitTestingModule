@@ -3,7 +3,7 @@ package com.epam.tat.module4.junitTests;
 import com.epam.tat.module4.Calculator;
 import org.junit.BeforeClass;
 
-public class BaseCalculatorJunitTest {
+public class BaseJunitTest {
     protected static Calculator calculator;
 
     @BeforeClass

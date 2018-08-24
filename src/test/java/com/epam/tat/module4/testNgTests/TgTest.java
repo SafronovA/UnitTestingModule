@@ -5,27 +5,27 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorCtgTest extends BaseCalculatorTestNgTest{
+public class TgTest extends BaseTestNgTest {
     private double arg1;
     private double expected;
 
-    @Factory(dataProvider = "ctgDp")
-    public CalculatorCtgTest(double arg1, double expected) {
+    @Factory(dataProvider = "tgDataProvider")
+    public TgTest(double arg1, double expected) {
         this.arg1 = Math.toRadians(arg1);
         this.expected = expected;
     }
 
     @Test
-    public void testCtg(){
-        double result = calculator.ctg(arg1);
+    public void testTg(){
+        double result = calculator.tg(arg1);
         Assert.assertEquals(result, expected);
     }
 
-    @DataProvider(name = "ctgDp")
-    public static Object [][] dp(){
+    @DataProvider(name = "tgDataProvider")
+    public static Object [][] dataProvider(){
         return new Object[][]{
-                {45, 1.0},
-                {60, Math.sqrt(3)/3},
+                {0, 0.0},
+                {60, Math.sqrt(3)},
         };
     }
 

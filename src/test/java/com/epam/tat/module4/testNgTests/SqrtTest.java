@@ -5,12 +5,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorSqrtTest extends BaseCalculatorTestNgTest{
+public class SqrtTest extends BaseTestNgTest {
     private double arg1;
     private double expected;
 
-    @Factory(dataProvider = "sqrtDp")
-    public CalculatorSqrtTest(double arg1, double expected) {
+    @Factory(dataProvider = "sqrtDataProvider")
+    public SqrtTest(double arg1, double expected) {
         this.arg1 = arg1;
         this.expected = expected;
     }
@@ -21,8 +21,8 @@ public class CalculatorSqrtTest extends BaseCalculatorTestNgTest{
         Assert.assertEquals(result, expected);
     }
 
-    @DataProvider(name = "sqrtDp")
-    public static Object [][] dp(){
+    @DataProvider(name = "sqrtDataProvider")
+    public static Object [][] dataProvider(){
         return new Object[][]{
                 {1.0, 1.0},
                 {25.0, 5.0},

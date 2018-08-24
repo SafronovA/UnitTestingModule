@@ -4,12 +4,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorDivLongExceptionTest extends BaseCalculatorTestNgTest{
+public class DivLongExceptionTest extends BaseTestNgTest {
     private long arg1;
     private long arg2;
 
     @Factory(dataProvider = "divLDp")
-    public CalculatorDivLongExceptionTest(long arg1, long arg2) {
+    public DivLongExceptionTest(long arg1, long arg2) {
         this.arg1 = arg1;
         this.arg2 = arg2;
     }

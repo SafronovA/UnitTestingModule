@@ -4,18 +4,18 @@
 
     <test name="testNgTests" enabled="false">
         <classes>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorCosTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorCtgTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorDivDoubleExceptionTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorDivDoubleTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorDivLongExceptionTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorDivLongTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorIsNegativeTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorIsPositiveTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorPowTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorSinTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorSqrtTest"/>
-            <class name="com.epam.tat.module4.testNgTests.CalculatorTgTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CosTest"/>
+            <class name="com.epam.tat.module4.testNgTests.CtgTest"/>
+            <class name="com.epam.tat.module4.testNgTests.DivDoubleExceptionTest"/>
+            <class name="com.epam.tat.module4.testNgTests.DivDoubleTest"/>
+            <class name="com.epam.tat.module4.testNgTests.DivLongExceptionTest"/>
+            <class name="com.epam.tat.module4.testNgTests.DivLongTest"/>
+            <class name="com.epam.tat.module4.testNgTests.IsNegativeTest"/>
+            <class name="com.epam.tat.module4.testNgTests.IsPositiveTest"/>
+            <class name="com.epam.tat.module4.testNgTests.PowTest"/>
+            <class name="com.epam.tat.module4.testNgTests.SinTest"/>
+            <class name="com.epam.tat.module4.testNgTests.SqrtTest"/>
+            <class name="com.epam.tat.module4.testNgTests.TgTest"/>
         </classes>
     </test>
 

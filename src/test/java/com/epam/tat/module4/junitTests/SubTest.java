@@ -8,19 +8,34 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(DataProviderRunner.class)
-public class CalculatorSubLongTest extends BaseCalculatorJunitTest {
+public class SubTest extends BaseJunitTest {
 
-    public CalculatorSubLongTest(){}
+    public SubTest(){}
 
     @Test
-    @UseDataProvider("dp")
+    @UseDataProvider("dataProviderDouble")
+    public void testSub(double arg1, double arg2, double expected){
+        double result = calculator.sub(arg1,arg2);
+        Assert.assertEquals(expected, result, 0.0);
+    }
+
+    @Test
+    @UseDataProvider("dataProviderLong")
     public void testSub(long arg1, long arg2, long expected){
         long result = calculator.sub(arg1,arg2);
         Assert.assertEquals(expected, result, 0);
     }
 
     @DataProvider
-    public static Object [][] dp(){
+    public static Object [][] dataProviderDouble(){
+        return new Object[][]{
+                {1.0, 0.5, 0.5},
+                {5, 8, -3}
+        };
+    }
+
+    @DataProvider
+    public static Object [][] dataProviderLong(){
         return new Object[][]{
                 {1, 0, 1},
                 {8, 5, 3}

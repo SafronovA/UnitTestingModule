@@ -5,12 +5,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorSinTest extends BaseCalculatorTestNgTest{
+public class SinTest extends BaseTestNgTest {
     private double arg1;
     private double expected;
 
-    @Factory(dataProvider = "sinDp")
-    public CalculatorSinTest(double arg1, double expected) {
+    @Factory(dataProvider = "sinDataProvider")
+    public SinTest(double arg1, double expected) {
         this.arg1 = Math.toRadians(arg1);
         this.expected = expected;
     }
@@ -21,8 +21,8 @@ public class CalculatorSinTest extends BaseCalculatorTestNgTest{
         Assert.assertEquals(result, expected);
     }
 
-    @DataProvider(name = "sinDp")
-    public static Object [][] dp(){
+    @DataProvider(name = "sinDataProvider")
+    public static Object [][] dataProvider(){
         return new Object[][]{
                 {0, 0.0},
                 {60, Math.sqrt(3)/2},

@@ -4,12 +4,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorDivDoubleExceptionTest extends BaseCalculatorTestNgTest{
+public class DivDoubleExceptionTest extends BaseTestNgTest {
     private double arg1;
     private double arg2;
 
     @Factory(dataProvider = "divLDp")
-    public CalculatorDivDoubleExceptionTest(double arg1, double arg2) {
+    public DivDoubleExceptionTest(double arg1, double arg2) {
         this.arg1 = arg1;
         this.arg2 = arg2;
     }

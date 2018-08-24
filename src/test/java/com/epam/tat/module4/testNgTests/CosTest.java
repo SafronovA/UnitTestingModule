@@ -5,12 +5,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
-public class CalculatorCosTest extends BaseCalculatorTestNgTest{
+public class CosTest extends BaseTestNgTest {
     private double arg1;
     private double expected;
 
-    @Factory(dataProvider = "cosDp")
-    public CalculatorCosTest(double arg1, double expected) {
+    @Factory(dataProvider = "cosDataProvider")
+    public CosTest(double arg1, double expected) {
         this.arg1 = Math.toRadians(arg1);
         this.expected = expected;
     }
@@ -21,8 +21,8 @@ public class CalculatorCosTest extends BaseCalculatorTestNgTest{
         Assert.assertEquals(result, expected);
     }
 
-    @DataProvider(name = "cosDp")
-    public static Object [][] dp(){
+    @DataProvider(name = "cosDataProvider")
+    public static Object [][] dataProvider(){
         return new Object[][]{
                 {0, 1.0},
                 {60, 0.5},
