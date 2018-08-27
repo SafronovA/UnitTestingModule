@@ -17,10 +17,15 @@ public class DivLongTest extends BaseTestNgTest {
         this.expected = expected;
     }
 
-    @Test(groups = "div", dataProviderClass = "divLDp")
+    @Test(groups = "div")
     public void testDiv(){
         long result = calculator.div(arg1,arg2);
         Assert.assertEquals(result, expected);
+    }
+
+    @Test (expectedExceptions = NumberFormatException.class, groups = "div")
+    public void testDivException(){
+        calculator.div(2,0);
     }
 
     @DataProvider(name = "divLDp")
