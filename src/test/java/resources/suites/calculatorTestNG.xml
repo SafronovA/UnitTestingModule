@@ -6,10 +6,7 @@
         <classes>
             <class name="com.epam.tat.module4.testNgTests.CosTest"/>
             <class name="com.epam.tat.module4.testNgTests.CtgTest"/>
-            <class name="com.epam.tat.module4.testNgTests.DivDoubleExceptionTest"/>
-            <class name="com.epam.tat.module4.testNgTests.DivDoubleTest"/>
-            <class name="com.epam.tat.module4.testNgTests.DivLongExceptionTest"/>
-            <class name="com.epam.tat.module4.testNgTests.DivLongTest"/>
+            <class name="com.epam.tat.module4.testNgTests.DivTest"/>
             <class name="com.epam.tat.module4.testNgTests.IsNegativeTest"/>
             <class name="com.epam.tat.module4.testNgTests.IsPositiveTest"/>
             <class name="com.epam.tat.module4.testNgTests.PowTest"/>
@@ -22,6 +19,12 @@
     <test name="packageRun" enabled="true">
         <packages>
             <package name="com.epam.tat.module4.testNgTests"/>
+        </packages>
+    </test>
+
+    <test name="jUnitTests" junit="true" enabled="false">
+        <packages>
+            <package name="com.epam.tat.module4.junitTests"/>
         </packages>
     </test>
 
