@@ -16,13 +16,13 @@
         </classes>
     </test>
 
-    <test name="packageRun" enabled="true">
+    <test name="packageRun" enabled="false">
         <packages>
             <package name="com.epam.tat.module4.testNgTests"/>
         </packages>
     </test>
 
-    <test name="jUnitTests" junit="true" enabled="false">
+    <test name="jUnitTests" junit="true" enabled="true">
         <packages>
             <package name="com.epam.tat.module4.junitTests"/>
         </packages>
